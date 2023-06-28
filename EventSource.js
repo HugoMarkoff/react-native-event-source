@@ -55,7 +55,7 @@ var EventSource = function(url, options) {
       xhr.timeout =
         this.OPTIONS && this.OPTIONS.timeout !== undefined
           ? this.OPTIONS.timeout
-          : 50000;
+          : 500000000;
 
       xhr.onreadystatechange = function() {
         if (
